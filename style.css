@@ -64,6 +64,7 @@ body{
 .header_bottom_right_details{
     display: flex;
     gap: 1.5rem;
+    
 }
 .bottom_right_button{
     font-size: 13px;
@@ -75,6 +76,14 @@ body{
     padding-top: 10px;
     padding-bottom: 10px;
     border-radius: 60px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.bottom_right_button:hover{
+    opacity: 0.6;
+}
+.bottom_right_button:active{
+    opacity: 1;
 }
 .header_bottom_left{
     display: flex;
@@ -123,8 +132,13 @@ body{
     color: white;
     display: flex;
     align-items: center;
-    
+    transition: 0.2s;
+    cursor: pointer;
 
+}
+.left_sidebar_content_inner_inner:hover{
+    color: #000000;
+    filter: invert(0%) sepia(9%) saturate(7471%) hue-rotate(185deg) brightness(89%) contrast(101%);
 }
 
 .left_sidebar_icon, .left_sidebar_icon_dash{
@@ -183,9 +197,17 @@ body{
     justify-content: right;
     gap: 1.5rem;
     
+    
 }
 .main_content_pics{
-    width: 20px
+    width: 20px;
+    cursor: pointer;
+}
+.main_content_pics:hover{    
+    filter: invert(36%) sepia(99%) saturate(2867%) hue-rotate(178deg) brightness(92%) contrast(98%);
+}
+.main_content_pics:active{
+    cursor: progress;
 }
 .main_content_grid_announcement,
 .main_content_grid_trending{
@@ -220,7 +242,15 @@ body{
     padding: 1rem;
     padding-left: 2rem;
     align-items: center;
+    transition: 0.2s;
 }
+.main_content_trending_flex:hover{
+    background-color: #0284C7;
+    overflow: hidden;
+    cursor: pointer;
+    color: white;
+}
+
 .test_grid{
     display: grid;
     grid-template-rows: 40px 1fr;
